@@ -214,7 +214,6 @@ def generateVoltageTable(equation, uniqueInputs, outputs, truthTable):
 
         # Output of the votlage table WITH the activation levels taken into consideration
         for eachOutput in outputs:
-            print(eachOutput)
             if (outputsAL[eachOutput] == 'H' and tentativeOutput == 1):
                 voltageTableRow.append('H')
             elif (outputsAL[eachOutput] == 'H' and tentativeOutput == 0):
@@ -227,6 +226,7 @@ def generateVoltageTable(equation, uniqueInputs, outputs, truthTable):
         voltageTable.append(voltageTableRow)
 
     return voltageTable
+
 
     # **************************************************
 equation = getEquation()
